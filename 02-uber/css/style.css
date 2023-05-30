@@ -93,8 +93,7 @@ nav {
 
 .promo {
   min-height: 800px;
-  background: url("../../img/background/uber_bg.jpg") center center/cover
-    no-repeat;
+  background: url("../img/background/uber_bg.jpg") center center/cover no-repeat;
   padding: 152px 0 135px 0;
 }
 .promo .promo_header {
@@ -180,6 +179,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
 }
 .causes .causes_icon {
   width: 100%;
