@@ -20,10 +20,13 @@ nav
 		border-right: 2px dotted black 
 		padding-right: 28px 
 .subheader 
-	position: absolute 
+	position: sticky 
 	width: 100% 
 	height: 87px 
 	background-color: rgba(0, 0, 0, 0.6) 
+	top: 0px 
+	z-index: 1 
+	backdrop-filter: blur(15px) 
 	.subheader_logo 
 		display: block 
 		margin-top: 17px 
@@ -154,4 +157,31 @@ nav
 		display: flex 
 .colortext 
 	color: #1eacc7 
-
+.label_btn 
+	font-weight: 400 
+	font-size: 11px 
+	align-items: center 
+	text-align: center 
+	text-transform: uppercase 
+	color: white 
+	width: 115px 
+	height: 27px 
+	background: #000000 
+	padding: 5px 12px 
+	margin: 0 auto 0 auto 
+.mobile_header 
+	font-style: normal 
+	font-weight: 700 
+	font-size: 38px 
+	text-align: center 
+	text-transform: uppercase 
+	color: #222222 
+	margin-top: 33px 
+.mobile_subheader 
+	width: 825px 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 17px 
+	text-align: center 
+	color: #222222 
+	margin: 0 auto 
