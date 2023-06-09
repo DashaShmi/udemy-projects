@@ -1,5 +1,12 @@
-*
-	font-family: "Roboto" sans-serif
+$main-color: #1eacc7
+$second-color: #ff5656
+=btn_hover
+	&:hover
+		background: none
+		background-color: $main-color
+
+	*
+		font-family: "Roboto" sans-serif
 header
 	position: relative
 nav
@@ -27,7 +34,7 @@ nav
 	top: 0px
 	z-index: 1
 	backdrop-filter: blur(15px)
-	.subheader_logo
+	&_logo
 		display: block
 		margin-top: 17px
 		max-width: 100%
@@ -53,6 +60,7 @@ nav
 		text-transform: uppercase
 		color: #ffffff
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
 .subheader_call
 	margin-top: 19px
 	font-weight: 300
@@ -114,6 +122,7 @@ nav
 		text-transform: uppercase
 		color: #ffffff
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
 .causes
 	min-height: 849px
 	padding: 18px 0 64px 0
@@ -157,7 +166,7 @@ nav
 		display: flex
 .colortext
 	color: #1eacc7
-.label_btn
+.black_btn
 	font-weight: 400
 	font-size: 11px
 	align-items: center
@@ -169,7 +178,7 @@ nav
 	background: #000000
 	padding: 5px 12px
 	margin: 0 auto 0 auto
-.mobile_header
+.black_header
 	font-style: normal
 	font-weight: 700
 	font-size: 38px
@@ -226,6 +235,37 @@ nav
 		&_plus
 			display: flex
 			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%)
+			width: 29px
+			height: 29px
+			background: #000000
+			margin: 0 auto
+			border-radius: 100%
+			cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background: $main-color
+				transition: 0,3s all
+			&:after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				width: 2px
+				height: 14px
+				background: $main-color
+				transition: 0,3s all
+			&:hover
+				&:before, &:after
+					background: $second-color
 
 .background_wrap
 	&_black
@@ -278,3 +318,18 @@ nav
 		line-height: 24px
 		text-align: center
 		color: #222222
+
+.condition
+	padding: 66px 0 87px 0
+	&_blok
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+
+	&_header
+		width: 480px
+		height: 24px
+		font-weight: 400
+		font-size: 22px
+		align-items: center
+		color: $main-color
