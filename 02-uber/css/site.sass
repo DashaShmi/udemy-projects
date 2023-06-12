@@ -333,3 +333,23 @@ nav
 		font-size: 22px
 		align-items: center
 		color: $main-color
+
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			font-weight: 300
+			font-size: 17px
+			line-height: 24px
+			margin-bottom: 10px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 3px
+				left: -32px
+				width: 21px
+				height: 20px
+				background: url('../icons/check_blue_1.svg') center (center/cover) no-repeat
