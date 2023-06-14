@@ -319,12 +319,7 @@ nav {
   background: #ff5656;
 }
 
-.background_wrap_black {
-  height: 502px;
-  background: black;
-  padding-top: 48px;
-}
-.background_wrap_black .choice_btn {
+.white_btn {
   font-weight: 400;
   font-size: 11px;
   align-items: center;
@@ -337,7 +332,8 @@ nav {
   padding: 5px 12px;
   margin: 0 auto 0 auto;
 }
-.background_wrap_black .choise_header {
+
+.white_header {
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -346,13 +342,19 @@ nav {
   color: #ffffff;
   margin-top: 33px;
 }
-.background_wrap_black .choise_subheader {
+
+.white_subheader {
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
   text-align: center;
   color: #ffffff;
-  margin-top: 0 auto;
+}
+
+.background_wrap_black {
+  height: 502px;
+  background: black;
+  padding-top: 48px;
 }
 .background_wrap_black .car {
   display: block;
@@ -423,4 +425,24 @@ nav {
 }
 .condition .warning .condition_list li:before {
   background: url("../icons/check_red.svg") center center/cover no-repeat;
+}
+
+.city {
+  min-height: 720px;
+  background: url("../img/background/bg_city.png") center center/cover no-repeat;
+  padding: 46px 0 50px 0;
+}
+.city .see_city {
+  display: block;
+  width: 223px;
+  height: 68px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 68px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1eacc7;
+  margin: 0 auto;
+  margin-top: 584px;
 }/*# sourceMappingURL=site.css.map */
