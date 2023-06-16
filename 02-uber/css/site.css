@@ -460,11 +460,17 @@ footer {
   flex: 1;
 }
 .footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35px;
   height: 35px;
   background: #070716;
   border-radius: 100%;
   margin-right: 8px;
+}
+.footer_social_item i {
+  color: #fff;
 }
 
 .footer_divider {
